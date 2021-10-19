@@ -9,33 +9,28 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="wrapper">
+  <header id="particles-js">
+    <div class="wrapper" >
       <nav>
         <!-- <div class="logo">
           <a href="/"><img src="./assets/logo.png" alt="Logo"></a>
         </div> -->
         <ul>
-          <li><a href="">Home</a></li>
+          <li>
+            <a href="#">Home</a>
+          </li>
           <li><a href="#aboutMe">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
       <div class="heroContent">
-        <h1>Harpreet Singh <strong>web developer</strong></h1>
+        <h1>Harpreet Singh<strong>web developer</strong></h1>
         <div class="heroImage">
           <img src="./assets/image1.png" alt="photoofthedeveloper">
         </div>
-      </div>
-      
+      </div>  
      </div>
-     <!-- <ul class="socialMedia">
-       <li><a href="">github</a></li>
-       <li><a href="">linkedin</a></li>
-       <li><a href=""></a></li>
-       <li><a href=""></a></li>
-     </ul> -->
   </header>
   <main>
     <section id="aboutMe" class="aboutMe">
@@ -65,36 +60,63 @@
       </div>
     </section>
     <section id="portfolio" class="portfolio wrapper">
-      <ul>
+      <ul class="listOfProjects">
         <li>
           <img src="./assets/trivia.png" alt="">
-          <p>Quranteen Persuit Trivia</p>
-        </li>
-        <li>
-          <img src="./assets/CurrencyChanger.png" alt="">
-          <p>Catch Pokemon</p>
-      
+          <p> 01. Quranteen Persuit Trivia</p>
+          <ul>
+            <li>React</li>
+            <li>Firebase</li>
+          </ul>
         </li>
         <li>
           <img src="./assets/pokemon.png" alt="">
-          <p>Currency changer</p>
+          <p>02. Catch Pokemon</p>
+          <ul>
+            <li>React</li>
+            <li>CSS</li>
+          </ul>
+        </li>
+        <li>
+          <img src="./assets/pokemon.png" alt="">
+          <p>03. Bar-One</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
         </li>
         <li>
           <img src="./assets/cultured.png" alt="">
-          <p>Cultured blog</p>
+          <p>04. Cultured blog</p>
+          <ul>
+            <li>Gatsby</li>
+            <li>Sass</li>
+          </ul>
         </li>
       </ul>
+    </section>
+    <section class="contactMe">
+      <div class="wrapper">
+        <p>I can help you to boost your project</p>
+        <h3><a href="">Let's work together -></a></h3>
+        <form class="hiddenForm">
+          <input type="text">
+        </form>
+      </div>
     </section>
     </main>
     <footer> 
       <p>copyright 2021 Harpreet Singh</p>
       <nav>
         <ul>
-          <li><a href="">github</a></li>
-          <li><a href="">linkedin</a></li>
+          <li><a href="https://github.com/harpsaini/"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/harpsaini/"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </nav>
     </footer>
   <script src="./index.js"></script>
+  <script src="/particles.js-master/particles.js"></script>
+  <script src="https://kit.fontawesome.com/c82b910442.js" crossorigin="anonymous"></script>
 </body>
 </html>

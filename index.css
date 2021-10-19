@@ -29,7 +29,6 @@ body{
   font-family: 'Roboto Slab', serif;
   background-color:black;
   color: white;
-  
 }
 
 .wrapper{
@@ -49,9 +48,13 @@ header nav{
   justify-content: center;
   height: 10vh;
   align-items: center;
-  text-transform: uppercase;
-  background-color: lightgray ;
-  
+}
+
+.scrolled{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: lightgray;
 }
 
 header nav ul{
@@ -59,11 +62,26 @@ header nav ul{
   gap: 2rem;
 }
 
+header a:active,
+header a:hover,
+header a:focus{
+  color: red;
+  font-size: 1.5rem;
+}
+
+@keyframes typeItIn{
+  0%{width: 0%}
+  100%{width: 50%}
+}
+
 h1{
+  overflow: hidden;
   font-size: 6rem;
   font-family: 'Ruda', sans-serif;
-
+  animation: typeItIn 1s steps(30,end);
+  white-space: nowrap;
 }
+
 
 strong{
   display: block;
@@ -76,8 +94,8 @@ strong{
   align-items: center;
   justify-content: space-between;
   height: 90vh;
-
 }
+
 .heroImage img{
   height: 500px;
 }
@@ -90,7 +108,6 @@ strong{
   flex-direction: column;
   justify-content: space-evenly;
   align-items:center;
-  background-color: lightgray;
 }
 
 .aboutSectionContent ul{
@@ -104,31 +121,37 @@ strong{
   text-align: center;
 }
 
-.aboutSectionContent h3{
-  margin-bottom: 1rem;
-}
+
 
 /* Portfolio section styles */
+/* .portfolio{
+  border: 5px solid green;
+} */
 
-
-
-.portfolio ul{
+.listOfProjects{
 display: flex;
 flex-wrap: wrap;
 gap: 2rem;
 margin: 10rem 0 ;
-
 }
 
-.portfolio ul li{
+.listOfProjects li{
   width: calc(50% - 2rem);
-  height: 500px;
+ 
 }
 
-.portfolio ul li img{
-  height: 90%;  
-}
+/* contact me styles */
 
+.contactMe{
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+}
+/* this class is removed by js to show the form after h3 is clicked */
+.hiddenForm{
+  visibility: hidden;
+}
 
 /* footer styles */
 
