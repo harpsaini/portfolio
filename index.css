@@ -28,7 +28,8 @@ body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
   background-color:black;
-  color: white;
+  color: silver;
+ 
 }
 
 .wrapper{
@@ -55,6 +56,7 @@ header nav{
   width: 100%;
   top: 0;
   background-color: lightgray;
+  color: white;
 }
 
 header nav ul{
@@ -65,7 +67,7 @@ header nav ul{
 header a:active,
 header a:hover,
 header a:focus{
-  color: red;
+  color: orange;
   font-size: 1.5rem;
 }
 
@@ -104,16 +106,21 @@ strong{
 
 .aboutMe{
   display: flex;
-  height: 80vh;
+  height: 60vh;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items:center;
 }
 
-.aboutSectionContent ul{
+.aboutMe h2{
+  font-family: 'Ruda', sans-serif;
+  font-size: 2rem;
+}
+
+.aboutSectionContent {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .aboutSectionContent ul li{
