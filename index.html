@@ -17,11 +17,11 @@
         </div> -->
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a class="navButton" href="#">Home</a>
           </li>
-          <li><a href="#aboutMe">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a class="navButton" href="#aboutMe">About</a></li>
+          <li><a class="navButton" href="#portfolio">Portfolio</a></li>
+          <li><a class="navButton" href="">Contact</a></li>
         </ul>
       </nav>
       <div class="heroContent">
@@ -35,26 +35,24 @@
   <main>
     <section id="aboutMe">
       <div class="aboutMe wrapper">
-      <h2>I create beautiful accessible websites and App</h2>
+      <h2>About me</h2>
       <article>
-        <p>Hi, I am a Front End Developer proficient in HTML, CSS, JavaScript, React and other front end technologies. 
-
-        Having Project Management background in agile environment, I leverage my organizational, research and time management skills to finding optimal solution to problems. I am passionate about building  clean reusable code, prioritize accessibility and well written documentation. </p>
+        <p>Hi, I am a Front End Developer based in Toronto, Ontario who is passionate about building elegant websites and robust apps. I love building clean, reusable code focusing on accessibility, industry best practices and user experience. 
+        </p>     
+        <p>
+          Building on my previous experience, I self document new features for code review, end user support and training. I am exceptional at record keeping, communicating technical ideas to technical and non technical teams. 
+        </p>
+        <p>
+          I am excited to be a part of a team that shares my values of diversity, inclusion and open communication in the workplace and making the world better one user experience at a time. 
+        </p>
       </article>
-        <ul class='aboutSectionContent'>
-          <li>
-            <h3>Accessibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illum odit tempore tenetur quae eveniet eaque? Incidunt deserunt alias possimus?
-            </p>
-          </li>
-          <li>
-            <h3>Documentation</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, possimus perspiciatis amet nam sapiente repellendus deserunt ratione illo facere numquam?</p>
-          </li>
-          <li>
-            <h3>Reusablity</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, error deserunt officiis velit explicabo quidem veniam minima sapiente qui ut.</p>
-          </li>
+      
+        <ul class='techStack'>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-js-square"></i></li>
+            <li><i class="fab fa-html5"></i></li>
+            <li><i class="fab fa-css3-alt"></i></li>
+            <li><i class="fab fa-sass"></i></li>
         </ul>
       </div>
     </section>
@@ -78,7 +76,7 @@
           </ul>
         </li>
         <li>
-          <img src="./assets/pokemon.png" alt="">
+          <img src="./assets/barone.png" alt="">
           <p>03. Bar-One</p>
           <ul>
             <li>HTML</li>
@@ -99,9 +97,23 @@
     <section class="contactMe">
       <div class="wrapper">
         <p>I can help you to boost your project</p>
-        <h3><a href="">Let's work together -></a></h3>
-        <form class="hiddenForm">
-          <input type="text">
+        <h3><a href="#form">Let's work together -></a></h3>
+        <form id="form"name="contact" class="hiddenForm" netlify>
+          <p>
+            <label class="sr-only">Name</label>
+              <input class="formElement" type="text" name="name" placeholder="name" />
+          </p>
+          <p>
+            <label class="sr-only">Email</label>
+              <input class="formElement" type="email" name="email" placeholder="Email" />
+          </p>
+          <p>
+            <label class="sr-only">Message</label>
+              <textarea class="formElement" placeholder="Message" name="message"></textarea>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
       </div>
     </section>
