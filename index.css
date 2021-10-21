@@ -186,6 +186,13 @@ font-size: 2rem;
   padding: 1rem 0;
   justify-content: flex-start;
   flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.projectLinks{
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
 }
 
 .projectDiscription{
@@ -332,8 +339,15 @@ footer nav ul{
     flex-direction: column;
     
   }
-
   .listOfProjects li{
     width: 100%;
   }
+}
+
+@media (max-width: 600px){
+  h1{
+   overflow: visible;
+   white-space: normal;
+   text-align: center;
+  } 
 }
