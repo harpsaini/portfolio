@@ -9,7 +9,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* General styles */
+                                /* General styles */
 
 h1,h2,h3,ul,li,p{
   margin: 0;
@@ -42,7 +42,17 @@ img{
   max-width: 100%;
 }
 
-/* Header styles */
+                              /* Header styles */
+
+
+header{
+  height: 100vh;
+}
+
+#particles-js{
+  height: 100%;
+}
+
 
 header nav{
   display: flex;
@@ -112,7 +122,7 @@ strong{
   height: 25rem;
 }
 
-/* About me section */
+                          /* About me section */
 
 .aboutMe{
   display: flex;
@@ -146,7 +156,7 @@ strong{
   justify-content: center;
 }
 
-/* Portfolio section styles */
+                                  /* Portfolio section styles */
 .portfolio{
   color: black;
 }
@@ -174,6 +184,8 @@ font-size: 2rem;
 .technologyUsed{
   display: flex;
   padding: 1rem 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .projectDiscription{
@@ -201,7 +213,8 @@ font-size: 2rem;
   visibility: visible;
 }
 
-/* contact me styles */
+
+                           /* contact me styles */
 
 .contactMe{
   min-height: 50vh;
@@ -212,6 +225,10 @@ font-size: 2rem;
   justify-content:center;
   position: relative;
   gap: 2rem;
+}
+
+.contactMe span{
+  color: orange;
 }
 /* this class is removed by js to show the form after h3 is clicked */
 .hiddenForm{
@@ -232,16 +249,18 @@ form{
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* margin: 2rem; */
+  width: 100%;
+  position: relative;
+  
 }
 
 .formElement{
   border-radius: 50px;
   min-height: 3rem;
   text-align: center;
-  width: 30vw;
-  border: 2px solid black;
-  color: orange;
+  width: 50vw;
+  border: 2px solid orange;
+  color: black;
 
 }
 
@@ -250,14 +269,27 @@ form textarea{
   resize: none;
 }
 
-form button{
+form button:nth-child(1){
   display: inline-block;
   width: 8rem;
   background-color: orange;
   border-radius: 50px;
-  
 }
 
+form button:hover,
+form button:focus,
+form button:active{
+  border-radius: 0;
+  font-weight: bolder;
+}
+
+.closeform{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 2rem;
+  
+}
 
 /* footer styles */
 

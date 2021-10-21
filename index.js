@@ -1,11 +1,13 @@
 
 
 //makes nav bar fixed and add background colour
+
 const fixedNav = document.querySelector("header nav")
 const navBtn = document.querySelectorAll(".navButton")
 const buttonToShowForm = document.querySelector('.contactMe a')
 const form = document.querySelector('form')
-console.log(form);
+const closeForm = document.querySelector(".closeform")
+// console.log(closeForm);
 
 window.addEventListener('scroll', ()=>{
   let scrolledDistance = window.scrollY;
@@ -19,4 +21,9 @@ window.addEventListener('scroll', ()=>{
 
 buttonToShowForm.addEventListener('click',()=>{
   form.classList.remove("hiddenForm")
+})
+
+
+closeForm.addEventListener('click',()=>{
+  form.classList.add("hiddenForm")
 })

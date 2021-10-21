@@ -9,12 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
 </head>
 <body>
-  <header id="particles-js">
-    <div class="wrapper" >
+  <header>
+    <div class="wrapper">
       <nav>
-        <!-- <div class="logo">
-          <a href="/"><img src="./assets/logo.png" alt="Logo"></a>
-        </div> -->
         <ul>
           <li>
             <a class="navButton" href="#">Home</a>
@@ -30,7 +27,7 @@
           <img src="./assets/image1.png" alt="photoofthedeveloper">
         </div>
       </div>  
-     </div>
+    </div>
   </header>
   <main>
     <section id="aboutMe">
@@ -43,7 +40,7 @@
           Building on my previous experience, I self document new features for code review, end user support and training. I am exceptional at record keeping, communicating technical ideas to technical and non technical teams. 
         </p>
         <p>
-          I am excited to be a part of a team that shares my values of diversity, inclusion and open communication in the workplace and making the world better one user experience at a time. 
+          I am excited to be a part of a team that shares my values of continous learning, diversity inclusion and open communication in the workplace
         </p>
       </article>
       
@@ -53,39 +50,40 @@
             <li><i class="fab fa-html5"></i></li>
             <li><i class="fab fa-css3-alt"></i></li>
             <li><i class="fab fa-sass"></i></li>
+            <li><i class="fab fa-github"></i></li>
         </ul>
       </div>
     </section>
     <section id="portfolio" class="portfolio wrapper">
       <ul class="listOfProjects">
         <li>
-          <img src="./assets/trivia.png" alt="">
+          <img src="./assets/trivia.png" alt="trivia game selection page">
           <p> 01. Quranteen Persuit Trivia</p>
           <ul class="technologyUsed">
             <li>React</li>
             <li>Firebase</li>
           </ul>
           <div class="projectDiscription">
-            <p>This project gives user the ability to start a new or previously saved games. Project utilize multiple api calls and firebase connection. </p>
+            <p>This project utilizes React hooks, external api for data and persistent Firebase connection. Users have the ability to start a new game or choose from saved games for a great trivia experience. </p>
           <a href="https://quarantinepursuit.netlify.app/"><i class="fas fa-link"></i></a>
           <a href="https://github.com/Quaranteam-Pursuit/trivia-game-project4"><i class="fab fa-github"></i></a>
           </div>
         </li>
         <li>
-          <img src="./assets/pokemon.png" alt="">
+          <img src="./assets/pokemon.png" alt="Pokemon listed">
           <p>02. Catch Pokemon</p>
           <ul class="technologyUsed">
             <li>React</li>
             <li>CSS</li>
           </ul>
           <div class="projectDiscription">
-            <p>This project gives user the ability to start a new or previously saved games. Project utilize multiple api calls and firebase connection. </p>
+            <p>Fun Pokemon app allows users to choose different types of Pokemon and catch a Pokemon on click. Project is build using React and Pokemon api. </p>
           <a href="https://thirsty-beaver-88e4a9.netlify.app/"><i class="fas fa-link"></i></a>
           <a href="https://github.com/harpsaini/harpreet_Singh_pokemon"><i class="fab fa-github"></i></a>
           </div>
         </li>
         <li>
-          <img src="./assets/barone.png" alt="">
+          <img src="./assets/barone.png" alt="a fully stocked bar">
           <p>03. Bar-One</p>
           <ul class="technologyUsed">
             <li>HTML</li>
@@ -93,20 +91,20 @@
             <li>JavaScript</li>
           </ul>
           <div class="projectDiscription">
-            <p>This project is a design matching as per the client's requirement. I took on this project to demonstrate my skills to match a design provided. I paid close attention to accessibility and responsiveness in this project.   </p>
+            <p>BarOne is a live realization of an elegant PSD design provided by the client. Created using HTML, CSS and JS paying close attention to accessibility and responsiveness.</p>
           <a href="https://heuristic-poincare-3c9c80.netlify.app/"><i class="fas fa-link"></i></a>
           <a href="https://github.com/harpsaini/barOne"><i class="fab fa-github"></i></a>
           </div>
         </li>
         <li>
-          <img src="./assets/cultured.png" alt="">
+          <img src="./assets/cultured.png" alt="a blog landing page">
           <p>04. Cultured blog</p>
           <ul class="technologyUsed">
             <li>Gatsby</li>
             <li>Sass</li>
           </ul>
           <div class="projectDiscription">
-            <p>This project gives user the ability to start a new or previously saved games. Project utilize multiple api calls and firebase connection. </p>
+            <p>This blog is created using Gatsby, sass and GraphQl. The data is dynamically accessed from CMS contenful. I created this blog to keep a journal. </p>
           <a href=""><i class="fas fa-link"></i></a>
           <a href=""><i class="fab fa-github"></i></a>
           </div>
@@ -116,8 +114,8 @@
     <section id="contactMe">
       <div class="wrapper contactMe">
         <p>I can help you to boost your project</p>
-        <h3><a href="#form">Let's work together -></a></h3>
-        <form id="form"name="contact" class="hiddenForm" netlify>
+        <h3><a href="#form">Let's work together <span>--></span></a></h3>
+        <form id="form"name="contact" class="hiddenForm" method="POST" data-netlify="true">
           <p>
             <label class="sr-only">Name</label>
               <input class="formElement" type="text" name="name" placeholder="Name" />
@@ -133,6 +131,7 @@
           <p>
             <button type="submit">Send</button>
           </p>
+          <button type="button" class="closeform" ><i class="far fa-times-circle"></i></button>
         </form>
       </div>
     </section>
@@ -147,7 +146,7 @@
       </nav>
     </footer>
   <script src="./index.js"></script>
-  <script src="/particles.js-master/particles.js"></script>
   <script src="https://kit.fontawesome.com/c82b910442.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
