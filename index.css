@@ -45,15 +45,6 @@ img{
                               /* Header styles */
 
 
-header{
-  height: 100vh;
-}
-
-#particles-js{
-  height: 100%;
-}
-
-
 header nav{
   display: flex;
   justify-content: center;
