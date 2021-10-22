@@ -327,8 +327,7 @@ footer nav ul{
 /* Landscape phones and down */
 @media (max-width: 800px) {
   .listOfProjects{
-    flex-direction: column;
-    
+    flex-direction: column; 
   }
   .listOfProjects li{
     width: 100%;
