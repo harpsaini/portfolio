@@ -206,8 +206,8 @@ font-size: 2rem;
   
 }
 
-.listOfProjects li:hover 
-.projectDiscription{
+.listOfProjects li:hover .projectDiscription,
+.listOfProjects li:active .projectDiscription{
   visibility: visible;
 }
 
