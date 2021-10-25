@@ -123,23 +123,25 @@
       <div class="wrapper contactMe">
         <p>I can help you to boost your project</p>
         <h3><a href="#form">Let's work together <span>--></span></a></h3>
-        <form id="form"name="contact" class="hiddenForm" method="POST" data-netlify="true">
+        <form id="form" name="contactForm" class="hiddenForm" method="POST" netlify>
           <p>
-            <label class="sr-only">Name</label>
-              <input class="formElement" type="text" name="name" placeholder="Name" />
+            <label for="name" class="sr-only">Name</label>
+            <input class="formElement" id="name" type="text" name="name" placeholder="Name" />
           </p>
           <p>
-            <label class="sr-only">Email</label>
-              <input class="formElement" type="email" name="email" placeholder="Email" />
+            <label for="email" class="sr-only">Email</label>
+            <input class="formElement" id="email" type="email" name="email" placeholder="Email" />
           </p>
           <p>
-            <label class="sr-only">Message</label>
-              <textarea class="formElement" placeholder="Message" name="message"></textarea>
+            <label for="message" class="sr-only">Message</label>
+            <textarea class="formElement" id="message" placeholder="message" name="message"></textarea>
           </p>
           <p>
             <button type="submit">Send</button>
           </p>
-          <button type="button" class="closeform" ><i class="far fa-times-circle"></i></button>
+          <p>
+            <button type="button" class="closeform" ><i class="far fa-times-circle"></i></button>
+          </p>
         </form>
       </div>
     </section>
