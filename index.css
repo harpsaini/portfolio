@@ -322,6 +322,9 @@ footer nav ul{
   .heroContent{
     justify-content: center;
   }
+  h1{
+    animation: none;
+  }
 }
 
 /* Landscape phones and down */
