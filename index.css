@@ -43,14 +43,12 @@ img{
 }
 
                               /* Header styles */
-
-
+                             
 header nav{
   display: flex;
   justify-content: center;
   min-height: 10vh;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .scrolled{
@@ -107,7 +105,6 @@ strong{
   flex-wrap: wrap;
   margin: 2rem;
 }
-
 
 .heroImage img{
   height: 25rem;
