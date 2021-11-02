@@ -24,12 +24,15 @@ a{
   color: inherit;
 }
 
+:root{
+  --secondaryColor:orange;
+}
+
 body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
   background-color:black;
   color: silver;
- 
 }
 
 .wrapper{
@@ -44,7 +47,7 @@ img{
 
                               /* Header styles */
                              
-header nav{
+header nav {
   display: flex;
   justify-content: center;
   min-height: 10vh;
@@ -66,14 +69,14 @@ header nav ul{
 }
 
 .hover{
-  color: orange;
+  color: var(--secondaryColor);
   font-size: 1.5rem;
 }
 
 header a:active,
 header a:hover,
 header a:focus{
-  color: orange;
+  color: var(--secondaryColor);
   font-size: 1.5rem;
 }
 
@@ -106,13 +109,69 @@ strong{
   margin: 2rem;
 }
 
-canvas{
-  position: absolute;
-  left: 0;
-}
 
 .heroImage img{
-  height: 25rem;
+  height: 40rem;
+}
+
+
+                    /* hanburger menu  */
+
+.menuBtn{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.menuBtnBurger{
+  width: 80px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50px;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  display: none;
+}
+
+.menuBtnBurger::before,
+.menuBtnBurger::after{
+  content: ' ';
+  width:80px ;
+  height: 10px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.menuBtnBurger::before{
+  transform: translateY(-20px);
+}
+
+.menuBtnBurger::after{
+  transform: translateY(20px);
+}
+
+/* Animation  */
+
+.menuBtn.open .menuBtnBurger{
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+
+.menuBtn.open .menuBtnBurger::before{
+  transform: rotate(45deg) translate(50px, -50px);
+}
+
+.menuBtn.open .menuBtnBurger::after{
+  transform: rotate(-45deg) translate(50px, 50px);
 }
 
                           /* About me section */
@@ -123,7 +182,7 @@ canvas{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 5px solid orange;
+  border: 5px solid var(--secondaryColor);
   padding: 2rem;
   line-height: 1.5;
 }
@@ -136,7 +195,6 @@ canvas{
 .aboutMe article{
   display: flex;
   flex-direction: column;
-
   gap: 1rem;
   width: 80%;
   
@@ -164,7 +222,7 @@ font-size: 2rem;
 
 .listOfProjects li{
   width: calc(50% - 2rem);
-  background-color: orange;
+  background-color: var(--secondaryColor);
   position: relative;
   padding: 1rem;
 }
@@ -196,8 +254,8 @@ font-size: 2rem;
   left: 0;
   right: 0;
   background-color: black;
-  color:orange;
-  opacity: 0.8;
+  color: var(--secondaryColor);
+  opacity: 0.9;
   font-size: 1.5rem;
   line-height: 2;
   padding: 5rem;
@@ -228,7 +286,7 @@ font-size: 2rem;
 }
 
 .contactMe span{
-  color: orange;
+  color: var(--secondaryColor);
 }
 /* this class is removed by js to show the form after h3 is clicked */
 .hiddenForm{
@@ -259,7 +317,7 @@ form{
   min-height: 3rem;
   text-align: center;
   width: 50vw;
-  border: 2px solid orange;
+  border: 2px solid var(--secondaryColor);
   color: black;
 
 }
@@ -272,7 +330,7 @@ form textarea{
 form button:nth-child(1){
   display: inline-block;
   width: 8rem;
-  background-color: orange;
+  background-color: var(--secondaryColor);
   border-radius: 50px;
 }
 
@@ -326,17 +384,41 @@ footer nav ul{
   }
   h1{
     animation: none;
+    
+  }
+  .heroImage img{
+    min-height: 30rem;
   }
 }
 
 /* Landscape phones and down */
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .listOfProjects{
     flex-direction: column; 
   }
   .listOfProjects li{
     width: 100%;
   }
+  .heroImage img{
+    min-height: 20rem;
+  }
+   
+  header nav ul{
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #434343;
+    gap: 2rem;
+    visibility: hidden;
+  }
+
+  .menuBtnBurger{
+    display: block;
+  }
+  
 }
 
 @media (max-width: 600px){

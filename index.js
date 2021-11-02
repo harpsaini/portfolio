@@ -1,9 +1,3 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
-
 
 
 //makes nav bar fixed and add background colour
@@ -33,3 +27,23 @@ buttonToShowForm.addEventListener('click',()=>{
 closeForm.addEventListener('click',()=>{
   form.classList.add("hiddenForm")
 })
+
+
+
+const menuBtn = document.querySelector(".menuBtn");
+const navMenu = document.querySelector("header nav ul")
+
+let menuOpen = false; 
+
+menuBtn.addEventListener('click', function(){
+  if(!menuOpen){
+    menuBtn.classList.add("open");
+    navMenu.style.visibility = "visible"
+    menuOpen = true;
+  }else{
+    menuBtn.classList.remove("open")
+    navMenu.style.visibility = "hidden"
+    menuOpen = false;
+  }
+}
+);
