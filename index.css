@@ -50,7 +50,7 @@ img{
 header nav {
   display: flex;
   justify-content: center;
-  min-height: 6rem;
+  min-height: 5rem;
   align-items: center;  
 }
 
@@ -129,11 +129,12 @@ strong{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center; 
+  
 }
 
 .menuBtnBurger{
-  width: 2rem;
+  width: 2.5rem;
   height: .3rem;
   background-color: white;
   border-radius: 50px;
@@ -145,7 +146,7 @@ strong{
 .menuBtnBurger::before,
 .menuBtnBurger::after{
   content: ' ';
-  width:2rem ;
+  width:2.5rem ;
   height:.3rem;
   background-color: white;
   border-radius: 50px;
@@ -163,7 +164,7 @@ strong{
 /* Animation  */
 
 .menuBtn.open .menuBtnBurger{
-  transform: translateX(-50px);
+  transform: translateX(-70px);
   background: transparent;
 }
 
