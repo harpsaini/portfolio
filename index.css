@@ -50,7 +50,7 @@ img{
 header nav {
   display: flex;
   justify-content: center;
-  min-height: 5rem;
+  min-height: 4rem;
   align-items: center;  
 }
 
@@ -129,8 +129,7 @@ strong{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  
+  align-items: center;   
 }
 
 .menuBtnBurger{
@@ -145,7 +144,7 @@ strong{
 
 .menuBtnBurger::before,
 .menuBtnBurger::after{
-  content: ' ';
+  content: '';
   width:2.5rem ;
   height:.3rem;
   background-color: white;
@@ -154,11 +153,11 @@ strong{
 }
 
 .menuBtnBurger::before{
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 
 .menuBtnBurger::after{
-  transform: translateY(20px);
+  transform: translateY(10px);
 }
 
 /* Animation  */
