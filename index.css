@@ -405,7 +405,7 @@ footer nav ul{
   header nav ul{
     flex-direction: column;
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     z-index: 1;
     min-height: 100vh;
     width: 100%;
@@ -426,6 +426,7 @@ footer nav ul{
    overflow: visible;
    white-space: normal;
    text-align: center;
+   font-size: 3rem;
   } 
   header img{
     height: 20rem;
