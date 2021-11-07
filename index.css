@@ -104,7 +104,7 @@ strong{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90vh;
+  min-height: calc(100vh - 4rem);
   flex-wrap: wrap;
   margin: 2rem;
   gap: 2rem;
