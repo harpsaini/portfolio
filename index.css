@@ -329,7 +329,7 @@ form textarea{
   resize: none;
 }
 
-form button:nth-child(1){
+.formSubmit{
   display: inline-block;
   width: 8rem;
   background-color: var(--secondaryColor);
@@ -347,8 +347,7 @@ form button:active{
   position: absolute;
   top: -20px;
   right: -20px;
-  font-size: 2rem;
-  
+  font-size: 1.5rem;
 }
 
 /* footer styles */
