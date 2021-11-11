@@ -48,7 +48,7 @@ app.hanburgerMenuHandler = () => {
 }
   
 
-  app.init = ()=> {
+app.init = ()=> {
   app.navBarScrollHandler();
   app.contactFormHandler();
   app.hanburgerMenuHandler();
