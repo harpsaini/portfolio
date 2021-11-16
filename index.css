@@ -25,15 +25,14 @@ a{
 }
 
 :root{
-  --secondaryColor: royalblue;
+  --secondaryColor: #228B22;
 }
 
 body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
-  background-color:black;
-  color: silver;
-}
+  background-color: #eeeeee;
+} 
 
 .wrapper{
   max-width: 1400px;
@@ -55,6 +54,14 @@ h2{
 }
 
                               /* Header styles */
+
+ header{
+   background-image: url('/assets/heroImage.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* object-fit: contain; */
+ }                           
                              
 header nav {
   display: flex;
@@ -68,9 +75,8 @@ header nav {
   width: 100%;
   top: 0;
   left: 0;
-  background-color:var(--secondaryColor);
+  background-color: #d4d4d4;
   z-index: 1;
-  color: silver;
 }
 
 header nav ul{
@@ -82,16 +88,18 @@ header ul a:active,
 header ul a:hover,
 header ul a:focus{
   font-size: 1.5rem;
+  color: var(--secondaryColor);
 }
 
 .logo{
   font-size: 2rem;
   font-family: cursive;
+  color:var(--secondaryColor);
 }
 
 .logo:hover{
   font-size: 2.5rem;
-}
+} 
 
 @keyframes typeItIn{
   0%{width: 0%}
@@ -106,7 +114,6 @@ h1{
   white-space: nowrap;
 }
 
-
 strong{
   display: block;
   font-size: 2rem;
@@ -119,8 +126,10 @@ strong{
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 4rem);
+  width: 100%;
   flex-wrap: wrap;
 }
+
         
                     /* hamburger menu  */
 
@@ -140,7 +149,7 @@ strong{
 .menuBtnBurger{
   width: 2.5rem;
   height: .3rem;
-  background-color: silver;
+  background-color: black;
   border-radius: 50px;
   transition: all .5s ease-in-out;
   position: absolute;
@@ -152,7 +161,7 @@ strong{
   content: '';
   width:2.5rem ;
   height:.3rem;
-  background-color: silver;
+  background-color: black;
   border-radius: 50px;
   position: absolute;
 }
@@ -166,8 +175,7 @@ strong{
 }
 
 
-/* About me section */
-
+                          /* About me section */
 
 .aboutMe article{
   display: flex;
@@ -175,23 +183,20 @@ strong{
   line-height: 2;
   font-size: 1.5rem;
   flex-wrap: wrap;
-  padding:4rem 0;
   align-items: flex-start;
+  justify-content: center;
+}
+
+.aboutMeImage img{
+  box-shadow: 1rem 1rem var(--secondaryColor);
+  width:  30rem;
 }
 
 .aboutMeContent{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-}
-
-.aboutmeImage,
-.aboutMeContent{
-  flex-basis: calc(50% - 5rem);
-}
-.aboutmeImage img{
-  box-shadow: 1rem 1rem var(--secondaryColor);
+  flex:1 1 calc(40% - 6rem );
 }
 
 .techStack {
@@ -204,7 +209,7 @@ strong{
 }
 
 .techStack li{
-  border: 1px solid var(--secondaryColor);
+  border: 2px solid var(--secondaryColor);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -215,20 +220,18 @@ strong{
 
 /* Portfolio section styles */
 
-.portfolio{
-  text-align: center;
-}
-
 .listOfProjects{
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem;
   font-size: 1.5rem;
+  justify-content: center;
 }
 
 .listOfProjects li{
-  flex: 1 0 calc(33% - 4rem);
+  flex: 1 0  calc((100% - 2rem) / 3);
   background-color: var(--secondaryColor);
+  color: white;
   position: relative;
   padding: 1rem;
 }
@@ -241,7 +244,7 @@ strong{
 .technologyUsed{
   display: flex;
   justify-content: center;
-  border: 4px solid silver;
+  border: 4px solid white;
   margin: 2rem 0;
 }
 
@@ -369,7 +372,7 @@ footer{
 
 footer nav ul{
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   font-size: 2rem;
 }
@@ -414,11 +417,16 @@ footer nav ul{
     background-color: var(--secondaryColor);
     gap: 2rem;
     visibility: hidden;
-    color: silver;
+    color: white;
     align-items: center;
     padding: 2rem;
   }
-  
+
+  header ul a:active,
+  header ul a:hover,
+  header ul a:focus{
+  color: white;
+}
   .menuBtnBurger{
     display: block;
   }
@@ -427,7 +435,6 @@ footer nav ul{
     flex-direction: column;
     text-align: center;
   }
- 
 }
 
 @media (max-width: 650px){
@@ -437,6 +444,23 @@ footer nav ul{
     text-align: center;
     font-size: 3rem;
   } 
+  .techStack{
+    font-size: 3rem;
+    gap: 2rem;
+  }
+  
+  .techStack li{
+    font-size: 4rem;
+    padding: 1rem;
+  }
+
+  .techStack li:hover{
+    font-size: 4.5rem;
+  }
+
+  .aboutMeImage img{
+    width: 25rem;
+  }
   
 }
 /* Animation  */
