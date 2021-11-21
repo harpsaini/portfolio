@@ -10,7 +10,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
                                 /* General styles */
-
+                               
 h1,h2,h3,ul,li,p{
   margin: 0;
   padding: 0;
@@ -33,6 +33,10 @@ body{
   font-family: 'Roboto Slab', serif;
   background-color: #eeeeee;
 } 
+
+html{
+  scroll-behavior:smooth;
+}
 
 .wrapper{
   max-width: 1400px;
