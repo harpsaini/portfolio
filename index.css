@@ -87,8 +87,9 @@ header nav ul{
 header ul a:active,
 header ul a:hover,
 header ul a:focus{
-  font-size: 1.5rem;
   color: var(--secondaryColor);
+  display: inline-block;
+  transform: scale(1.1);
 }
 
 .logo{
@@ -98,7 +99,8 @@ header ul a:focus{
 }
 
 .logo:hover{
-  font-size: 2.5rem;
+  transform: scale(1.4);
+  transition: ease 0.5s;
 } 
 
 @keyframes typeItIn{
@@ -215,7 +217,7 @@ strong{
 }
 
 .techStack li:hover{
-  font-size: 6.5rem;
+  transform: scale(1.1);
 }
 
 /* Portfolio section styles */
