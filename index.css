@@ -26,12 +26,13 @@ a{
 
 :root{
   --secondaryColor: #228B22;
+  --primaryColor:#eeeeee;
 }
 
 body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
-  background-color: #eeeeee;
+  background-color: var(--primaryColor);
 } 
 
 html{
@@ -313,26 +314,38 @@ strong{
 }
 
 form{
-  background-color: #434343;
-  color: black;
+  /* background-color: #434343; */
   display: flex;
   min-height: 30vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 100%;
   position: relative;
+  width: 100%;
+}
+
+form ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+form ul li{
+  flex: 1 0 calc(50% - 2rem);
 }
 
 .formElement{
-  border-radius: 50px;
   min-height: 3rem;
   text-align: center;
-  width: 50vw;
-  border: 2px solid var(--secondaryColor);
-  color: black;
- 
+  border-style: none;
+  border-bottom: 4px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  background-color:var(--primaryColor) ;
+  min-width: 100%;
+  outline: none;
 }
 
 form textarea{
@@ -341,7 +354,7 @@ form textarea{
 }
 
 .formSubmit{
-  display: inline-block;
+  display: block;
   min-width: 8rem;
   background-color: var(--secondaryColor);
   border-radius: 50px;
@@ -361,6 +374,8 @@ form button:active{
   top: -20px;
   right: -20px;
   font-size: 1.5rem;
+  border-radius: 50%;
+  
 }
 
                    /* footer styles */
