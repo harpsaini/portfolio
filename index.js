@@ -29,7 +29,7 @@ app.contactFormHandler = () => {
 }
 
 // hamberget menu for mobile and ipad views. 
-app.hanburgerMenuHandler = () => {
+app.hamburgerMenuHandler = () => {
   const menuBtn = document.querySelector(".menuBtn");
   const navMenu = document.querySelector("header nav ul")
   let menuOpen = false; 
@@ -51,7 +51,7 @@ app.hanburgerMenuHandler = () => {
 app.init = ()=> {
   app.navBarScrollHandler();
   app.contactFormHandler();
-  app.hanburgerMenuHandler();
+  app.hamburgerMenuHandler();
 }
 
 app.init();

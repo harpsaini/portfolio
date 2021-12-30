@@ -7,6 +7,7 @@
   <title>Harpreet Singh</title>
   <link rel="stylesheet" href="./index.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -34,10 +35,10 @@
         <div class="aboutMe wrapper">
           <h2>About me</h2>
           <article>
-            <div class="aboutMeImage">
+            <div data-aos="fade-right" class="aboutMeImage">
               <img src="./assets/image1.jpg" alt="photoofthedeveloper">
             </div>
-            <div class="aboutMeContent">
+            <div data-aos="fade-left" class="aboutMeContent">
               <p>Hi, I am a Front End Developer based in Toronto, Ontario who is passionate about building elegant websites and robust apps. I love building clean, reusable code focusing on accessibility, best industry practices and user experience. 
               </p>     
               <p>
@@ -174,6 +175,10 @@
     </footer>
     <script src="https://kit.fontawesome.com/c82b910442.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
 </body>
 </html>
 
