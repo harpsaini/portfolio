@@ -33,6 +33,7 @@ body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
   background-color: var(--primaryColor);
+  overflow-x: hidden;
 } 
 
 html{
@@ -65,14 +66,14 @@ h2{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   /* object-fit: contain; */
+   object-fit: cover;
  }                           
                              
 header nav {
   display: flex;
   justify-content:space-around;
   min-height: 4rem;
-  align-items: center;  
+  align-items: center; 
 }
 
 .scrolled{
@@ -159,7 +160,6 @@ strong{
   background-color: black;
   border-radius: 50px;
   transition: all .5s ease-in-out;
-  position: absolute;
   display: none;
 }
 
@@ -192,6 +192,7 @@ strong{
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  align-items:center ;
 }
 
 .aboutMeImage img{
