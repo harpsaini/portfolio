@@ -33,7 +33,7 @@ body{
   font-size: 125%;
   font-family: 'Roboto Slab', serif;
   background-color: var(--primaryColor);
-  overflow-x: hidden;
+  overflow-x: hidden; 
 } 
 
 html{
@@ -67,7 +67,8 @@ h2{
    background-size: cover;
    background-repeat: no-repeat;
    object-fit: cover;
- }                           
+ }                         
+   
                              
 header nav {
   display: flex;
