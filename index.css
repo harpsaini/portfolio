@@ -31,7 +31,7 @@ a{
 
 body{
   font-size: 125%;
-  font-family: 'Roboto Slab', serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--primaryColor);
   overflow-x: hidden; 
 } 
@@ -51,7 +51,6 @@ img{
 }
 
 h2{
-  font-family: 'Ruda', sans-serif;
   font-size: 3rem;
   text-transform: uppercase ;
   text-align: center;
@@ -59,30 +58,21 @@ h2{
   color: var(--secondaryColor);
 }
 
-                              /* Header styles */
-
- header{
-   background-image: url('/assets/heroImage.jpg');
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   object-fit: cover;
- }                         
-   
-                             
+                 /* Header styles */
+                
 header nav {
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   min-height: 4rem;
   align-items: center; 
 }
 
+
 .scrolled{
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #d4d4d4;
+  width: 90%;
+  background-color: rgb(168, 165, 165);
+  text-align: center;
   z-index: 1;
 }
 
@@ -110,17 +100,9 @@ header ul a:focus{
   transition: ease 0.5s;
 } 
 
-@keyframes typeItIn{
-  0%{width: 0%}
-  100%{width: 50%}
-}
 
 h1{
-  overflow: hidden;
   font-size: 5rem;
-  font-family: 'Ruda', sans-serif;
-  animation: typeItIn 1s steps(30,end);
-  white-space: nowrap;
 }
 
 strong{
@@ -133,7 +115,7 @@ strong{
 .heroContent{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   min-height: calc(100vh - 4rem);
   width: 100%;
   flex-wrap: wrap;
@@ -145,14 +127,15 @@ strong{
 .menuBtn{
   height: 3rem;
   width: 3rem;
-  position: absolute;
+  position: relative;
   top: 10px;
-  right: 10px;
+  right: 1rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;   
+  border: 2PX SOLID RED ;
 }
 
 .menuBtnBurger{
@@ -163,6 +146,7 @@ strong{
   transition: all .5s ease-in-out;
   display: none;
 }
+
 
 .menuBtnBurger::before,
 .menuBtnBurger::after{
