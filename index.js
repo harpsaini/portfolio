@@ -1,20 +1,5 @@
 const app = {};
 
-//makes nav bar fixed and add background colour
-app.navBarScrollHandler = () =>{
-  // const navBtn = document.querySelectorAll(".navButton")
-  const fixedNav = document.querySelector("header nav")
-  window.addEventListener('scroll', ()=>{
-    let scrolledDistance = window.scrollY;
-    if(scrolledDistance > 10){
-      fixedNav.classList.add("scrolled")
-    }
-    else{
-      fixedNav.classList.remove("scrolled")
-    } 
-  })
-}
-
 //handles the contact form in the contact section
 app.contactFormHandler = () => {
   const buttonToShowForm = document.querySelector('.contactMe a')
@@ -49,7 +34,6 @@ app.hamburgerMenuHandler = () => {
   
 
 app.init = ()=> {
-  app.navBarScrollHandler();
   app.contactFormHandler();
   app.hamburgerMenuHandler();
 }

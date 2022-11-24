@@ -65,20 +65,16 @@ header nav {
   justify-content:space-between;
   min-height: 4rem;
   align-items: center; 
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  box-shadow: 2px 2px  black;
+  padding: 0px 10px 10px 0px;
 }
 
-
-.scrolled{
-  position: fixed;
-  width: 90%;
-  background-color: rgb(168, 165, 165);
-  /* text-align: center; */
-  z-index: 1;
-}
 
 header nav ul{
   display: flex;
-  gap: 2rem;
+  gap: 2rem;  
 }
 
 header ul a:active,
@@ -130,9 +126,7 @@ strong{
   position: relative;
   right: 1rem;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: none;
 }
 
 .menuBtnBurger{
@@ -142,6 +136,7 @@ strong{
   border-radius: 50px;
   transition: all .5s ease-in-out;
   display: none;
+  position: relative;
   
 }
 
@@ -417,9 +412,9 @@ footer nav ul{
     position: absolute;
     top: 4rem;
     right: 0;
-    min-height: 100vh;
+    height: max-content;
     width: 33%;
-    background-color: var(--secondaryColor);
+    background-color: rgba(34, 139, 34, 0.8);
     gap: 2rem;
     visibility: hidden;
     color: white;
@@ -431,6 +426,11 @@ footer nav ul{
   header ul a:hover,
   header ul a:focus{
   color: white;
+}
+.menuBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
   .menuBtnBurger{
     display: block;
