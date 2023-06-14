@@ -192,15 +192,14 @@ strong{
 .techStack {
   display: flex;
   gap: 4rem;
-  font-size: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 4rem;
+  
 }
 
 .techStack li{
   border: 2px solid var(--secondaryColor);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
 }
 
@@ -455,24 +454,7 @@ footer nav ul{
     text-align: center;
     font-size: 3rem;
   } 
-  .techStack{
-    font-size: 3rem;
-    gap: 2rem;
-  }
-  
-  .techStack li{
-    font-size: 4rem;
-    padding: 1rem;
-  }
-
-  .techStack li:hover{
-    font-size: 4.5rem;
-  }
-
-  /* .aboutMeImage img{
-    width: 20rem;
-  } */
-  
+ 
 }
 /* Animation  */
 
